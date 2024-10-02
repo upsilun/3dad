@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9fafb;
+      padding: 0 20px;
+    }
+
+    /* Centered container */
+    .container {
+      max-width: 400px;
+      margin: 80px auto;
+      background-color: #fff;
+      padding: 3rem 2rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input {
+      padding: 0.75rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #008CBA;
+      box-shadow: 0 0 5px rgba(0, 140, 186, 0.3);
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 1rem;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background 0.3s, box-shadow 0.3s;
+      margin-top: 1rem;
+    }
+
+    button:hover {
+      background-color: #43a047;
+      box-shadow: 0 8px 20px rgba(76, 175, 80, 0.5);
+    }
+
+    .login-link {
+      display: block;
+      margin-top: 2rem;
+      color: #555;
+      text-decoration: none;
+    }
+
+    .login-link span {
+      color: #008CBA;
+    }
+
+    .login-link span:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Register</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+      <button type="submit">Register</button>
+    </form>
+    <a href="login.html" class="login-link">Already have an account? <span>Login here</span></a>
+  </div>
+
+</body>
+</html>
